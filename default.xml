@@ -25,7 +25,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="android" remote="nameless" revision="android-4.4" />
+  <project path="android" name="namelessmoto/android" remote="github" revision="android-4.4" />
 
   <!-- Nameless START -->
   <project path="bionic" name="android_bionic" groups="pdk" remote="nameless" revision="android-4.4" />
@@ -58,7 +58,7 @@
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="nameless" revision="android-4.4" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="nameless" revision="android-4.4" />
   <project path="system/media" name="android_system_media" remote="nameless" revision="android-4.4" />
-  <project path="vendor/nameless" name="android_vendor_nameless" remote="nameless" revision="android-4.4" />
+  <project path="vendor/nameless" name="namelessmoto/android_vendor_nameless" remote="github" revision="android-4.4" />
   <project path="vendor/nameless/proprietary" name="android_vendor_nameless_proprietary" remote="nameless" revision="android-4.4" />
   <!-- Nameless   END -->
 
@@ -304,6 +304,7 @@
   <project path="external/webp" name="CyanogenMod/android_external_webp" />
   <project path="external/webrtc" name="CyanogenMod/android_external_webrtc" groups="pdk" />
   <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" groups="pdk" />
+  <project path="external/wpa_supplicant_8_ti" name="CyanogenMod/android_external_wpa_supplicant_8_ti" remote="cm" revision="cm-11.0" />
   <project path="external/xmlwriter" name="CyanogenMod/android_external_xmlwriter" />
   <project path="external/xmp_toolkit" name="CyanogenMod/android_external_xmp_toolkit" />
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" groups="pdk" />
@@ -485,4 +486,11 @@
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" />
+
+   <!-- Moto -->
+  <project path="device/motorola/moto_msm8960dt" name="namelessmoto/android_device_motorola_moto_msm8960dt" remote="github" revision="nameless" />
+  <project path="kernel/motorola/msm8960dt-common" name="CyanogenMod/android_kernel_motorola_msm8960dt-common" remote="github" revision="cm-11.0" />
+  <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="github" revision="cm-11.0" />
+  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-11.0" />
+  <project path="device/motorola/qcom-common" name="omnimotox/android_device_motorola_qcom-common" remote="github" revision="cm-11.0" />
 </manifest>
